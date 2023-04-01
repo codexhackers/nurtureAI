@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">416259583822-gdo0a5o86gbj8ir6uk8fn7ujpi6msgm2.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">416259583822</string>
+    <string name="google_api_key" translatable="false">AIzaSyC9tFEMR8stG36kBYt7-JO0Ti38wAvaC8k</string>
+    <string name="google_app_id" translatable="false">1:416259583822:android:07362f86b11e04d0a7381f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC9tFEMR8stG36kBYt7-JO0Ti38wAvaC8k</string>
+    <string name="google_storage_bucket" translatable="false">zenchat-55b21.appspot.com</string>
+    <string name="project_id" translatable="false">zenchat-55b21</string>
+</resources>
