@@ -44,8 +44,8 @@ class _MyAppState extends State<MyApp> {
       title: 'nurtureai',
       theme: ThemeData(
         fontFamily: 'Poppins',
-        primaryColor: Colors.teal[700],
-        accentColor: Colors.teal[50],
+        primaryColor: const Color(0xFFc7f1a9),
+        accentColor: const Color(0xFF111111),
       ),
       debugShowCheckedModeBanner: false,
       home: AnimatedSplashScreen(
