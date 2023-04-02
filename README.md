@@ -1,14 +1,14 @@
-# Zenchat
+# NurtureAI
 
-Zenchat is an AI therapist chatbot app built with Flutter that provides a virtual platform for individuals to engage in mental health conversations and receive emotional support.
+## This is a project submission for the team Codex at the BFF Hackathon
 
-This project is a submission for the CodeValds hacakthon https://codevalds-msi.netlify.app/
+NurtureAi is an AI therapist chatbot app built with Flutter that provides a virtual platform for individuals to engage in mental health conversations and receive emotional support.
 
 ## Purpose
-The purpose of Zenchat is to provide users with an empathetic and non-judgmental space to discuss their thoughts, feelings, and emotions, and offer coping mechanisms and techniques for managing mental health issues such as stress, anxiety, and depression.
+The purpose of NurtureAI is to provide users with an empathetic and non-judgmental space to discuss their thoughts, feelings, and emotions, and offer coping mechanisms and techniques for managing mental health issues such as stress, anxiety, and depression.
 
 ## Target Audience
-The target audience of Zenchat is individuals, especially students and teenagers who are seeking mental health support and guidance.
+The target audience of NurtureAI is individuals, especially students and teenagers who are seeking mental health support and guidance.
 
 ## Features
 - Mental health support
@@ -23,6 +23,7 @@ The target audience of Zenchat is individuals, especially students and teenagers
 - Flutter
 - Dart
 - C++
+- Metamask
 - cupertino_icons: ^1.0.2
 - lottie: ^2.3.0
 - animated_splash_screen: ^1.3.0
@@ -41,23 +42,23 @@ The target audience of Zenchat is individuals, especially students and teenagers
 - progress_indicators: ^1.0.0
 
 ## Minimum Android Version
-The minimum Android version required to run Zenchat is Android 4.1.
+The minimum Android version required to run NurtureAI is Android 4.1.
 
 ## User Authentication and Data Storage
-Zenchat uses Firebase and Cloud Firestore for user authentication and data storage.
+NurtureAI uses Firebase and Cloud Firestore for user authentication and data storage.
 
 ## OpenAI API
-Zenchat uses the OpenAI API for its AI chatbot feature.
+NurtureAI uses the OpenAI API for its AI chatbot feature.
 
 ## Installation
-To install Zenchat on your device, follow these steps:
+To install NurtureAI on your device, follow these steps:
 1. Upgrade Flutter to the latest version.
 2. Install all dependencies using `flutter pub get`.
 3. Obtain an OpenAI API key at https://platform.openai.com/account/api-keys.
 4. Insert your key in /lib/pages/chat/key.dart.
 5. Build your APK using `flutter build apk`.
 
-#MetaMask
+## Metamask
 If you want to login using metamask wallet follow the steps below:
 1. Install MetaMask wallet app from the playstore https://play.google.com/store/apps/details?id=io.metamask&hl=en&gl=US
 2.You'll be prompted to create a new wallet or import an existing one. Follow the prompts to set up your wallet.
@@ -68,6 +69,5 @@ If you want to login using metamask wallet follow the steps below:
 - https://github.com/swapnilgarg7
 - https://github.com/CodeGeek04
 - https://github.com/Sart-Hack
-
 
 
