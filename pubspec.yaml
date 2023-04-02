@@ -51,6 +51,8 @@ dependencies:
   chat_gpt_sdk: ^2.0.6
   dart_openai: ^1.8.4
   progress_indicators: ^1.0.0
+  walletconnect_dart: ^0.0.11
+  url_launcher: ^6.1.10
   
   
 

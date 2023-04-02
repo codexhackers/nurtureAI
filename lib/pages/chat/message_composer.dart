@@ -17,7 +17,7 @@ class MessageComposer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(12),
-      color: Theme.of(context).colorScheme.secondaryContainer.withOpacity(0.05),
+      color: Colors.white,
       child: SafeArea(
         child: Row(
           children: [
@@ -43,7 +43,7 @@ class MessageComposer extends StatelessWidget {
                         // ),
                         Padding(
                           padding: EdgeInsets.all(16),
-                          child: FadingText('nurtureai is typing...'),
+                          child: FadingText('NurtureAI is typing...'),
                         ),
                       ],
                     ),

@@ -33,7 +33,7 @@ class _MainScreenState extends State<MainScreen> {
         icon,
         color: _selectedPageIndex != idx
             ? Theme.of(context).accentColor
-            : Colors.white,
+            : Colors.teal[400],
         size: 35,
       ),
       onPressed: () => _selectPage(idx),
@@ -43,7 +43,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).accentColor,
+      backgroundColor: Colors.white,
       body: SafeArea(child: _pages[_selectedPageIndex]),
       bottomNavigationBar: SafeArea(
         child: Container(

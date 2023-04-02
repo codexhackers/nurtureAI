@@ -74,7 +74,7 @@ class _DocsScreenState extends State<DocsScreen> {
                   style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white),
+                      color: Colors.black),
                 ),
               ],
             ),
@@ -97,7 +97,7 @@ class _DocsScreenState extends State<DocsScreen> {
                   height: 144,
                   margin: EdgeInsets.only(bottom: 20),
                   decoration: BoxDecoration(
-                    color: Theme.of(context).accentColor,
+                    color: Colors.teal[400]?.withOpacity(0.6),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Row(

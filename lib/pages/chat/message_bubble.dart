@@ -16,22 +16,7 @@ class MessageBubble extends StatefulWidget {
 }
 
 class _MessageBubbleState extends State<MessageBubble> {
-  String name = 'Anonymous';
-
-  void initState() {
-    getName();
-  }
-
-  Future<void> getName() async {
-    await SharedPreferenceFucntion.getUserNameFromSF().then((value) {
-      if (value == null) {
-        return;
-      }
-      setState(() {
-        name = value;
-      });
-    });
-  }
+  String name = 'You';
 
   @override
   Widget build(BuildContext context) {
@@ -49,8 +34,8 @@ class _MessageBubbleState extends State<MessageBubble> {
             margin: const EdgeInsets.all(8),
             decoration: BoxDecoration(
               color: widget.isUserMessage
-                  ? themeData.colorScheme.primary.withOpacity(0.4)
-                  : Colors.teal[700]?.withOpacity(0.4),
+                  ? Colors.teal[400]?.withOpacity(0.6)
+                  : Theme.of(context).primaryColor,
               borderRadius: const BorderRadius.all(Radius.circular(12)),
             ),
             child: Padding(
@@ -59,20 +44,19 @@ class _MessageBubbleState extends State<MessageBubble> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Align(
-                    alignment: widget.isUserMessage
-                        ? Alignment.topLeft
-                        : Alignment.topLeft,
-                    child: Text(
-                      widget.isUserMessage ? '$name' : 'NurtureAI',
-                      style: const TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                  ),
+                      alignment: widget.isUserMessage
+                          ? Alignment.topLeft
+                          : Alignment.topLeft,
+                      child: Text(
+                        widget.isUserMessage ? '$name' : 'NurtureAI',
+                        style: const TextStyle(fontWeight: FontWeight.bold),
+                      )),
                   const SizedBox(height: 8),
                   Align(
                     alignment: widget.isUserMessage
                         ? Alignment.topLeft
                         : Alignment.topLeft,
-                    child: Text(widget.content),
+                    child: SelectableText(widget.content),
                   ),
                 ],
               ),

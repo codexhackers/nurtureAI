@@ -515,7 +515,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           style: TextStyle(
                             fontSize: MediaQuery.of(context).size.width * 0.05,
                             fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                         const SizedBox(height: 5),
@@ -523,14 +523,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           'Gender: $gender',
                           style: TextStyle(
                             fontSize: MediaQuery.of(context).size.width * 0.04,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                         Text(
                           'Email: $email',
                           style: TextStyle(
                             fontSize: MediaQuery.of(context).size.width * 0.04,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ],
