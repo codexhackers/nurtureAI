@@ -45,15 +45,14 @@ class _ChatPageState extends State<ChatPage> {
     WidgetsBinding.instance.addPostFrameCallback((_) => _scrollDown());
     if (latest.contains("TEXT")) {
       return Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: const Text(
             "Talk with NurtureAI",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-            ),
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
           ),
           toolbarHeight: 80,
-          backgroundColor: Colors.teal[400],
+          backgroundColor: Theme.of(context).primaryColor,
           automaticallyImplyLeading: false,
         ),
         body: Column(
@@ -85,12 +84,10 @@ class _ChatPageState extends State<ChatPage> {
         appBar: AppBar(
           title: const Text(
             "Talk with NurtureAI",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-            ),
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
           ),
           toolbarHeight: 80,
-          backgroundColor: Colors.teal[400],
+          backgroundColor: Theme.of(context).primaryColor,
           automaticallyImplyLeading: false,
         ),
         body: Column(

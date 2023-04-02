@@ -5,6 +5,8 @@ import 'package:nurtureai/Helper/sharedPreference.dart';
 import 'package:nurtureai/pages/loginPage.dart';
 import 'pages/main_screen.dart';
 import 'pages/splash_screen.dart';
+import 'pages/MMlogin_page.dart';
+import 'utils/routes.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -58,6 +60,7 @@ class _MyAppState extends State<MyApp> {
       routes: {
         SplashScreen.routeName: (context) => const SplashScreen(),
         MainScreen.routeName: (context) => const MainScreen(),
+        MyRoutes.loginRoute: (context) => const MMLoginPage()
       },
     );
   }

@@ -1,9 +1,12 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nurtureai/Helper/sharedPreference.dart';
+import 'package:nurtureai/pages/MMlogin_page.dart';
 import 'package:nurtureai/pages/main_screen.dart';
 import 'package:nurtureai/pages/registerPage.dart';
 import 'package:nurtureai/pages/reset_password.dart';
@@ -185,7 +188,7 @@ class _LoginPageState extends State<LoginPage> {
                                   login();
                                 },
                                 child: const Text(
-                                  "Log in",
+                                  "Login",
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 16,
@@ -193,8 +196,47 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
                               ),
                             ),
+                            const SizedBox(height: 10),
+                            //metamask option
+                            SizedBox(
+                              width: double.infinity,
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor:
+                                      Theme.of(context).primaryColor,
+                                  elevation: 0,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(30),
+                                  ),
+                                ),
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => MMLoginPage()));
+                                },
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const Image(
+                                      image: AssetImage("assets/metamask.png"),
+                                      height: 20,
+                                      width: 20,
+                                    ),
+                                    const Text(
+                                      "Login With MetaMask",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 16,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+
                             // Anonymous option
-                            const SizedBox(height: 13),
+                            const SizedBox(height: 20),
                             SizedBox(
                               width: double.infinity,
                               child: ElevatedButton(
@@ -218,6 +260,7 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
                               ),
                             ),
+
                             // forget password option
                             const SizedBox(height: 8),
                             TextButton(
