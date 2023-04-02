@@ -38,7 +38,7 @@ class show_subscription extends StatelessWidget {
                       '400 INR/WEEK',
                       style: TextStyle(
                         fontSize: MediaQuery.of(context).size.width * 0.05,
-                        color: Colors.white,
+                        color: Colors.black,
                       ),
                     ),
                   ),
@@ -85,7 +85,7 @@ class show_subscription extends StatelessWidget {
                       '1500 INR/MONTH',
                       style: TextStyle(
                         fontSize: MediaQuery.of(context).size.width * 0.05,
-                        color: Colors.white,
+                        color: Colors.black,
                       ),
                     ),
                   ),
@@ -132,7 +132,7 @@ class show_subscription extends StatelessWidget {
                       '5000 INR/QUARTER',
                       style: TextStyle(
                         fontSize: MediaQuery.of(context).size.width * 0.05,
-                        color: Colors.white,
+                        color: Colors.black,
                       ),
                     ),
                   ),
