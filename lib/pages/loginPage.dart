@@ -43,13 +43,13 @@ class _LoginPageState extends State<LoginPage> {
                 children: [
                   Container(
                     height: MediaQuery.of(context).size.height * 0.3,
-                    color: Colors.teal[700],
+                    color: Theme.of(context).primaryColor,
                     child: Center(
                       // image to be add
                       child: Container(
                         decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("assets/LogoLogin.png"),
+                              image: AssetImage("assets/nurtureaiLogo.png"),
                               fit: BoxFit.scaleDown),
                         ),
                       ),
@@ -174,7 +174,8 @@ class _LoginPageState extends State<LoginPage> {
                               width: double.infinity,
                               child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: Colors.black,
+                                  backgroundColor:
+                                      Theme.of(context).primaryColor,
                                   elevation: 0,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(30),
@@ -186,7 +187,7 @@ class _LoginPageState extends State<LoginPage> {
                                 child: const Text(
                                   "Log in",
                                   style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.black,
                                     fontSize: 16,
                                   ),
                                 ),
@@ -198,7 +199,8 @@ class _LoginPageState extends State<LoginPage> {
                               width: double.infinity,
                               child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: Colors.black,
+                                  backgroundColor:
+                                      Theme.of(context).primaryColor,
                                   elevation: 0,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(30),
@@ -210,7 +212,7 @@ class _LoginPageState extends State<LoginPage> {
                                 child: const Text(
                                   "Go Anonymous",
                                   style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.black,
                                     fontSize: 16,
                                   ),
                                 ),
